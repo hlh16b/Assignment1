@@ -1,1 +1,102 @@
+3E.
+(a)
+howar@LAPTOP-EMF38UNU MINGW64 ~/Documents/Assignment1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+howar@LAPTOP-EMF38UNU MINGW64 ~/Documents/Assignment1 (master)
+$ vim docs/status.txt
+
+howar@LAPTOP-EMF38UNU MINGW64 ~/Documents/Assignment1 (master)
+$ git commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   docs/status.txt
+
+no changes added to commit
+
+howar@LAPTOP-EMF38UNU MINGW64 ~/Documents/Assignment1 (master)
+$ git commit -a
+[master 5d16272] Copied results of a git status to file
+ 1 file changed, 4 insertions(+)
+
+howar@LAPTOP-EMF38UNU MINGW64 ~/Documents/Assignment1 (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 409 bytes | 204.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/hlh16b/Assignment1.git
+   d9a0f39..5d16272  master -> master
+
+(b)
+7
+git rev-list master --count
+
+(c)
+January 10, 2019
+git log .gitignore
+
+(d)
+Branching allows for many improvements, including the ability to test features 
+in a new file without potentially breaking existing code while maintaining all
+previous commits. Also, it makes it easier for people who are in essence working
+together in parallel.
+
+(e)
+Git log shows a list of all previous commits and alterations to files with the correct
+flags, however, git status merely shows you the current directory and others to be 
+uploaded, for detail on this information you would have to use git log.
+
+(f)
+git log Weapon.h
+
+(g)
+git log --grep=file
+
+(h)
+	(I)		Inheritance in object oriented programming is where one class, typically 
+			called the "child", inherents all functions and variables from another,
+			the "parent" class. It's usually used for something basic, whereas "cars"
+			would be the parent class and a specific example, ie a Hyundai or something,
+			would be an instance of the child class.
+	(II)	In essence polymorphism appears to be an extension of inheritence, as 
+			it is typically used in an effort to use code in different ways without
+			having to rewrite it for every instance. With polymorphism, many different
+			types of objects will have a function of the same name that does the same
+			thing in general, but how it does it different for each one.
+	(III)
+			Encapsulation refers primarily to how an object is 'built', in essence 
+			combining an object with the variables and functions while hiding the
+			'private' information to prevent the user from changing it in a way that
+			would ultimately crash or break the code. 
+
+(i)
+In the Dictator and Lieutenants workflow method, there is in essence a hierarchy
+in the creation. Everybody and pull from the repository, however only the dictator
+can push to it. The dictator receives code from the lieutenants, who receive code
+from the various developers. The lieutenants  merge and solve conflicts for the
+various developer code, and pass it on to the director who can then merge changes
+between the lietenants code and push it. In the Integration management workflow method,
+however, while everybody can still pull from the central repository everybody then
+pushes to their own private repository, and it is up to an integration manager who
+combines all code and pushes it to the main repository.
+(j)
+In a large setting, such as a team of 100 developers, it would make more sense to
+follow the Dictator and Lieutenants workflow than the Centralized workflow. This
+would in essence save time as it is the job of the leiutenants to merge code and only
+the director can push, rather than it being up to the individual developer to resolve
+any conflicts and everybody having the power to push to the repository. Because it is 
+the job of a smaller branch of people it allows the others to get to work on something
+else, and minimizes the conflicts to resolve at the highest point of the hierarchy, 
+the director. Plus, it decreases the possiblity of each persons copy of the code
+being different with only a small number of people capable of altering the repository.
 `
