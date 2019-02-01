@@ -12,13 +12,14 @@
 
 class SimpleHammer : public Weapon
 {
-	SimpleHammer() : Weapon("Simple hammer", 25.0)
-	{
-	}
-	
-	virtual ~SimpleHammer() {};
-	
-	virtual double hit(double armor);
+	public:
+		SimpleHammer() : Weapon("Simple hammer", 25.0)
+		{
+		}
+		
+		virtual ~SimpleHammer() {};
+		
+		virtual double hit(double armor);
 };
 
 #endif
