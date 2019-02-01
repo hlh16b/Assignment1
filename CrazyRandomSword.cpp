@@ -1,5 +1,5 @@
 /* 
- * File:   CrazyRandomSword.h
+ * File:   CrazyRandomSword.cpp
  * Author: Hannah Howard <hlh16b@my.fsu.edu>
  *  
  */
