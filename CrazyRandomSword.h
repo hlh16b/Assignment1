@@ -21,7 +21,7 @@ class CrazyRandomSword : public Weapon
 		CrazyRandomSword() : Weapon("Crazy random sword", 7)	
 		{
 			srand(time(NULL));
-			hitpoints = rand() % 94 + 7;
+			hitPoints = rand() % 94 + 7;
 			
 			// Referred to the C++ reference "rand" page to see how to do this
 		}
@@ -29,4 +29,6 @@ class CrazyRandomSword : public Weapon
 		virtual ~CrazyRandomSword() {};
 		
 		virtual double hit(double armor);
-}
+};
+
+#endif

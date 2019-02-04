@@ -12,13 +12,13 @@
 class Tonbogiri : public Weapon 
 {
 	public:
-		Tonbogiri : Weapon("Sword of Tonbogiri", 50.0)
+		Tonbogiri() : Weapon("Sword of Tonbogiri", 50.0)
 		{
 		}
 		
 		virtual ~Tonbogiri() {};
 		
 		virtual double hit(double armor);
-}
+};
 
 #endif

@@ -13,7 +13,7 @@ double Tonbogiri::hit(double armor)
 	double damage = 0;
 	int x = 2;
 	
-	if( armor % 2 == 0 )
+	if( (int)armor % 2 == 0 )
 	{
 		while( x < armor )
 		{
@@ -21,13 +21,13 @@ double Tonbogiri::hit(double armor)
 		}
 		if( x == armor )
 		{
-			damage = hitpoints;
+			damage = hitPoints;
 		}
 	}
 	
-	if( armor % 2 != 0 || x > armor )
+	if( (int)armor % 2 != 0 || x > armor )
 	{
-		damage = hitpoints - ( armor * ( 1/3 ) );
+		damage = hitPoints - ( armor * ( 1/3 ) );
 	}
 	
 	return damage;
