@@ -27,7 +27,7 @@ double Tonbogiri::hit(double armor)
 	
 	if( (int)armor % 2 != 0 || x > armor )
 	{
-		damage = hitPoints - ( armor * ( 1/3 ) );
+		damage = hitPoints - ( armor/3.0 );
 	}
 	
 	return damage;
