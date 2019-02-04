@@ -25,4 +25,8 @@ class CrazyRandomSword : public Weapon
 			
 			// Referred to the C++ reference "rand" page to see how to do this
 		}
+		
+		virtual ~CrazyRandomSword() {};
+		
+		virtual double hit(double armor);
 }
