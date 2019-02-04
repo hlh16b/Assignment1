@@ -68,7 +68,7 @@ git log --grep=file
 			the "parent" class. It's usually used for something basic, whereas "cars"
 			would be the parent class and a specific example, ie a Hyundai or something,
 			would be an instance of the child class.
-	(II)	In essence polymorphism appears to be an extension of inheritence, as 
+	(II)		In essence polymorphism appears to be an extension of inheritence, as 
 			it is typically used in an effort to use code in different ways without
 			having to rewrite it for every instance. With polymorphism, many different
 			types of objects will have a function of the same name that does the same
@@ -99,4 +99,12 @@ the job of a smaller branch of people it allows the others to get to work on som
 else, and minimizes the conflicts to resolve at the highest point of the hierarchy, 
 the director. Plus, it decreases the possiblity of each persons copy of the code
 being different with only a small number of people capable of altering the repository.
-`
+
+
+
+5.
+The RoleGame prototype uses polymorphism in that the entire system is based on a Weapon class,
+with sub classes that feature the particular weapon; ie, Common Spear, Common Sword, Simple
+Hammer, Crazy Random Sword, etc. This is a primary example of the use of polymorphism, especially
+given the function all sub classes share; hit. Furthermore, there is encapsulation as all necessary
+information was hidden within the classes, unable to be edited while running the code.
