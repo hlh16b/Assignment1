@@ -38,6 +38,72 @@ int main(int argc, char** argv) {
     weapon = WeaponFactory::getInstance()->getWeapon("spear");
     simulateWeapon(weapon, armor);
     delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("hammer");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("crazy sword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("tonbogiri");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	armor = 37;
+
+	weapon = WeaponFactory::getInstance()->getWeapon("hammer");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("crazy sword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("tonbogiri");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	armor = 45;
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("crazy sword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("tonbogiri");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	armor = 77;
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("crazy sword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("tonbogiri");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	armor = 128;
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("crazy sword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("tonbogiri");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	armor = 36;
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("crazy sword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("tonbogiri");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
 
     return 0;
 }
